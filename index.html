@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Менің Сайтым</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #f9f9ff, #e6f0ff);
+      color: #333;
+    }
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      background: #0056b3;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      display: none;
+      padding: 40px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    section.active {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #007BFF;
+      color: white;
+      font-size: 14px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a.link {
+      color: #007BFF;
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Қош келдіңіздер!</h1>
+    <p>Бұл сайт Мобильді және Бұлтты технологиялар тақырыптарына арналған</p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showPage('home')">Басты бет</a>
+    <a href="#" onclick="showPage('contact')">Байланыс</a>
+    <a href="#" onclick="showPage('info')">Сайт туралы</a>
+  </nav>
+
+  <section id="home" class="active">
+    <h2>Негізгі тақырыптар</h2>
+    <ul>
+      <li><a class="link" href="#cloud">Бұлтты технологиялар</a></li>
+      <li><a class="link" href="#models">Бұлтты есептеу модельдері</a></li>
+      <li><a class="link" href="#virtual">Виртуализация технологиялары</a></li>
+      <li><a class="link" href="#web">Бұлттағы веб-қызметтер</a></li>
+      <li><a class="link" href="#mobile">Мобильді технологиялар</a></li>
+      <li><a class="link" href="#terms">Мобильді терминдер</a></li>
+      <li><a class="link" href="#services">Ұялы байланыс қызметтері</a></li>
+      <li><a class="link" href="#standards">Мобильді стандарттар</a></li>
+      <li><a class="link" href="#centers">Танысу орталықтары</a></li>
+      <li><a class="link" href="#trends">Даму тенденциялары</a></li>
+    </ul>
+
+    <h3 id="cloud">Бұлтты технологиялар</h3>
+    <p>Бұл — деректерді интернет арқылы сақтау, өңдеу және басқару технологиясы. Мысалы: Google Drive, Dropbox, iCloud.</p>
+
+    <h3 id="models">Бұлтты есептеу модельдері</h3>
+    <p>Модельдер: IaaS, PaaS, SaaS. Орта түрлері: жеке бұлт, қоғамдық бұлт, гибридті бұлт, бірлескен бұлт.</p>
+
+    <h3 id="virtual">Виртуализация технологиялары</h3>
+    <p>Физикалық ресурстарды бірнеше виртуалды жүйелерге бөлу. Мысалы: VMware, VirtualBox.</p>
+
+    <h3 id="web">Бұлттағы веб-қызметтер</h3>
+    <p>Интернет арқылы бағдарламаларды қолдануға мүмкіндік береді: Google Docs, Office 365, AWS.</p>
+
+    <h3 id="mobile">Мобильді технологиялар</h3>
+    <p>Смартфон, планшет, ноутбук негізіндегі технологиялар. Қосымшалар мен жүйелер: Android, iOS.</p>
+
+    <h3 id="terms">Мобильді технология терминдері</h3>
+    <p>Wi-Fi, Bluetooth, NFC, GSM, LTE, 5G, GPS, смартфон, мобильді қолданба.</p>
+
+    <h3 id="services">Ұялы байланыс қызметтері</h3>
+    <p>Қоңырау, SMS, MMS, интернет, видеоқоңырау, роуминг, мобильді банк.</p>
+
+    <h3 id="standards">Мобильді стандарттар</h3>
+    <p>1G – аналогтық, 2G – сандық байланыс, 3G – интернет, 4G – жоғары жылдамдық, 5G – төмен кідіріс.</p>
+
+    <h3 id="centers">Танысу орталықтары</h3>
+    <p>АКТ үйренуге арналған орталықтар: интернет, бұлт, компьютерлік бағдарламалар оқытылады.</p>
+
+    <h3 id="trends">Қазіргі заманғы даму тенденциялары</h3>
+    <ul>
+      <li>Smart City</li>
+      <li>IoT</li>
+      <li>Big Data</li>
+      <li>AI</li>
+      <li>Green IT</li>
+      <li>Edge computing</li>
+      <li>5G, Wi-Fi 6</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Байланыс</h2>
+    <p>Бұл сайтты <strong>1703-44 тобы</strong> жасады.</p>
+    <p><strong>Байланыс нөмірі:</strong> 8 777 999 0011</p>
+  </section>
+
+  <section id="info">
+    <h2>Сайт туралы</h2>
+    <p>Бұл сайт 2025 жылдың сәуір айында студенттер тапсырмасы ретінде жасалды.</p>
+    <p>Мақсаты — мобильді және бұлтты технологиялар туралы түсінік беру, жаңа трендтермен таныстыру.</p>
+  </section>
+
+  <footer>
+    1703-44 тобы жасады © 2025
+  </footer>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
